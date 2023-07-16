@@ -13,14 +13,12 @@ const Todos = () => {
 
     // Add Emojis Function
     const AddEmojis = (event) => {
-        const symbol = event.unified.split("");
+        const symbol = event.unified.split("_");
         const emArray = [];
-        symbol.forEach(element => {
-            emArray.push("0x" + element);
+        symbol.forEach((element) =>  emArray.push("0x" + element));
             let emoji = String.fromCodePoint(...emArray);
             setText(text + emoji);
-        });
-    }
+        };
 
     return (
         <div className='pt-3rem w-[90%] mx-auto sm:w-[70%] md:w-[60%] lg:w-[40%]'>
