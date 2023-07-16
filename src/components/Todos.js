@@ -5,19 +5,19 @@ import data from '@emoji-mart/data'
 import Picker from '@emoji-mart/react'
 
 
-
 const Todos = () => {
 
-    const [emojis, setEmojis] = useState(false);
-    const [text, setText] = useState('');
+    const [showEmoji , setshowEmoji] = useState(false);
+    const [text, setText] = useState("");
 
     // Add Emojis Function
-    const AddEmojis = (event) => {
-        const symbol = event.unified.split("_");
-        const emArray = [];
-        symbol.forEach((element) =>  emArray.push("0x" + element));
-            let emoji = String.fromCodePoint(...emArray);
-            setText(text + emoji);
+    const addEmoji = (e) => {
+        const sym = e.unified.split("_");
+        // console.log(sym);
+        const codeArray = [];
+        sym.forEach((element) =>  codeArray.push('0x' + element));
+        let emoji = String.fromCodePoint(...codeArray);
+        setText(text + emoji);
         };
 
     return (
@@ -30,6 +30,7 @@ const Todos = () => {
                 <form className='flex items-start gap-2 pt-2rem'>
                     <div className='w-full flex items-end p-2 bg-todo rounded-lg relative'>
                         <textarea
+                            value={text}
                             className='w-full bg-transparent outline-none resize-none text-sm'
                             placeholder="Enter your Todos" cols="30" rows="2"
                             onChange={(event) => {
@@ -38,22 +39,24 @@ const Todos = () => {
                         >
                         </textarea>
                         <span
-                            className='cursor-pointer hover:text-slate-300'
                             onClick={() => {
-                                setEmojis(!emojis);
-                            }}>
+                                setshowEmoji(!showEmoji);
+                            }}
+                            className='cursor-pointer hover:text-slate-300'
+                            >
                             <BsFillEmojiSunglassesFill />
                         </span>
-                        {emojis &&
+                        {showEmoji && (
                             <div className='absolute right-2 top-[100%]'>
                                 <Picker
                                     data={data}
-                                    onEmojiSelect={AddEmojis}
+                                    onEmojiSelect={addEmoji}
                                     emojiSize={20}
                                     emojiButtonSize={28}
-                                    maxFrequentRows={1} />
+                                    maxFrequentRows={1} 
+                                />
                             </div>
-                        }
+                        )}
                     </div>
                     <button type="submit" className='flex items-center capitalize gap-2 bg-yellow-300 text-black py-1.5 px-3 rounded-lg hover:bg-bodyBg hover:text-white'>
                         <BsFillBookmarkPlusFill />
