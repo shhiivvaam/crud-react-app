@@ -1,7 +1,10 @@
+import './index.css'
+import Todos from './components/Todos';
+
 function App() {
   return (
-    <div>
-      <h6 className="text-red-500 underline">Shivam</h6>
+    <div className='text-white py-4'>
+      <Todos/>
     </div>
   );
 }
