@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/shhiivvaam/crud-react-app/static/css/main.fe7866d1.css",
-    "main.js": "/shhiivvaam/crud-react-app/static/js/main.7aa0014d.js",
-    "index.html": "/shhiivvaam/crud-react-app/index.html",
-    "main.fe7866d1.css.map": "/shhiivvaam/crud-react-app/static/css/main.fe7866d1.css.map",
-    "main.7aa0014d.js.map": "/shhiivvaam/crud-react-app/static/js/main.7aa0014d.js.map"
+    "main.css": "/crud-react-app/static/css/main.fe7866d1.css",
+    "main.js": "/crud-react-app/static/js/main.7aa0014d.js",
+    "index.html": "/crud-react-app/index.html",
+    "main.fe7866d1.css.map": "/crud-react-app/static/css/main.fe7866d1.css.map",
+    "main.7aa0014d.js.map": "/crud-react-app/static/js/main.7aa0014d.js.map"
   },
   "entrypoints": [
     "static/css/main.fe7866d1.css",
