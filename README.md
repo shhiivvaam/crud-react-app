@@ -1,5 +1,5 @@
 ## Live Link: 
-    `https://todo-diaryy.netlify.app/`
+    https://todo-diaryy.netlify.app/
 
 # Getting Started with Create React App
 
