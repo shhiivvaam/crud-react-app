@@ -1,6 +1,5 @@
 ## Live Link: 
-    https://todo-diaryy.netlify.app/
-
+    https://shhiivvaam.github.io/crud-react-app/
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
