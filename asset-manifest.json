@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/shhiivvaam/crud-react-app.git/static/css/main.fe7866d1.css",
+    "main.js": "/shhiivvaam/crud-react-app.git/static/js/main.7aa0014d.js",
+    "index.html": "/shhiivvaam/crud-react-app.git/index.html",
+    "main.fe7866d1.css.map": "/shhiivvaam/crud-react-app.git/static/css/main.fe7866d1.css.map",
+    "main.7aa0014d.js.map": "/shhiivvaam/crud-react-app.git/static/js/main.7aa0014d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe7866d1.css",
+    "static/js/main.7aa0014d.js"
+  ]
+}
