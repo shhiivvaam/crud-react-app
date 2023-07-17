@@ -1,7 +1,7 @@
 {
   "name": "crud-react-app",
   "version": "0.1.0",
-  "homepage": "https://github.com/shhiivvaam/crud-react-app",
+  "homepage": "http://shhiivvaam.github.io/crud-react-app",
   "private": true,
   "dependencies": {
     "@emoji-mart/data": "^1.1.2",
